@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+#gif-image{
+    background-image:url("gif-bild.png");
+    height: 67%;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    margin-bottom: 5vh;
+    padding-bottom: 5vh;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 5vh;
+}
+
+.switch-hr{
+    border: solid 1px;
+    
+}
+
+.switch{
+    margin: 1em;
+}
+
+#circle-image{
+    border: solid 3px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    width: 18rem;
+    height: 18rem;
+    
+}
+
+#title{
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    letter-spacing: 0.1em;
+}
+.about-me{
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    letter-spacing: 0.1em;
+}
+.jobb-info{
+    width: 40%;
+}
+
+.container-jobb{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    margin-left: 5rem;
+    height: 13vh;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.logor{
+    float: right;
+    width: 30%;
+}
