@@ -1,6 +1,7 @@
 *{
     margin: 0;
 }
+
 #gif-image{
     background-image:url("gif-bild.png");
     height: 67%;
@@ -54,18 +55,91 @@ header{
 }
 .jobb-info{
     width: 40%;
+    background-color: white;
 }
 
 .container-jobb{
     width: 100%;
     flex-direction: row;
     display: flex;
-    margin-left: 5rem;
+    margin-left: 15rem;
     height: 13vh;
     margin-bottom: 1rem;
     align-items: center;
+    background-color: white;
+    margin-bottom: 2rem;
 }
 .logor{
     float: right;
     width: 30%;
+}
+.Skills-button{
+    height: 6rem;
+    width: 15%;
+    background-color: grey;
+    border-radius: 2em;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+.Skills-button:hover {
+    background-color: red;
+  }
+
+.Skills-title{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    font-size: 5rem;
+}
+.Bakgrund-Skills{
+    background-color: black;
+    color: white;
+    height: 30rem;
+}
+#skills-p-tag1, #skills-p-tag2, #skills-p-tag3{
+    height: 6rem;
+    width: 15%;
+    background-color: grey;
+    color: white;
+    display: inline;
+    margin-top: -1.85em;
+    padding-top: 1em;
+    visibility: hidden;
+}
+.p-tags{
+    display: flex;
+    justify-content: space-evenly;
+}
+.p-tag1{
+    margin-left: 2.4em;
+    font-size: larger;
+}
+.p-tag2{
+    margin-left: 1em;
+    font-size: larger;
+}
+.p-tag3{
+    margin-left: 3em;
+    font-size: larger;
+}
+#Erfarenhet{
+    font-size: 4rem;
+    text-align: center;
+}
+.toggle{
+    height: 6rem;
+    background-color: grey;
+    border-radius: 2em;
+    color: white;
+    margin-top: -2em;
 }
