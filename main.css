@@ -104,7 +104,7 @@ header{
 .Bakgrund-Skills{
     background-color: black;
     color: white;
-    height: 30rem;
+    height: 50rem;
 }
 #skills-p-tag1, #skills-p-tag2, #skills-p-tag3{
     height: 6rem;
@@ -135,11 +135,21 @@ header{
 #Erfarenhet{
     font-size: 4rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 .toggle{
     height: 6rem;
     background-color: grey;
     border-radius: 2em;
     color: white;
-    margin-top: -2em;
+    margin-top: -3.9em;
+}
+.Portfolio{
+    margin-top: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+.projekt{
+    text-align: center;   
 }
