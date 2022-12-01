@@ -11,28 +11,38 @@
 </head>
 <body>
     <header>
-        <ul>
-            About me
-        </ul>
-        <ul>
-            Experience 
-        </ul>
-        <ul>
-            Skills 
-        </ul>
-        <ul>
-            Portfolio
-        </ul>
-        <ul>
-            Contact
-        </ul>
+        <a class="header-knappar" href="#gif-image">
+            <ul>
+                Om mig
+            </ul>
+        </a>
+        <a class="header-knappar" href="#Erfarenhet">
+            <ul>
+                Erfarenhet
+            </ul>
+        </a>
+        <a class="header-knappar" href="#Bakgrund-Skills">
+            <ul>
+                Kompetens
+            </ul>
+        </a>
+        <a class="header-knappar" href="#Portfolio">
+            <ul>
+                Portfolio
+            </ul>
+        </a>
+        <a class="header-knappar" href="#footer">
+            <ul>
+                Kontakta
+            </ul>
+        </a>
         <ul>
             <span class="switch" onclick="LightTheme()">
-                Light theme
+                Ljust tema
             </span>
             <span class="switch-hr"></span>
             <span class=" switch" onclick="DarkTheme()">
-                Dark theme
+                Mörkt tema
             </span>
         </ul>
     </header>
@@ -55,7 +65,7 @@
     </div>
 
     <h1 id="Erfarenhet">Arbetserfarenhet och Utbildning</h1>
-        <div class="container-jobb">
+        <div id="container-jobb">
             <div class="jobb-info">
                 <h3>Göteborgs Stad, kultur- och fritidsförvaltningen  2016 Juli - 2016 Juli </h3>
                 <p>Jag sommarjobbade som ferieentreprenör. Vår uppgift var att skapa ett event för Göteborgs Stad. 
@@ -67,7 +77,7 @@
                 <img src="göteborg-icon.png" alt="bild1" class="logor">
             </div>
         </div>
-        <div class="container-jobb">
+        <div id="container-jobb">
             <div class="jobb-info">
                 <h3>Hedås fastighetsservice 2021 Maj - 2021 Augusti </h3>
                 <p>Jag jobbade inom fastighetsservice där jag tog hand om trädgårdsarbeten såsom  klippning av buskar och gräsmattor, 
@@ -79,7 +89,7 @@
                 <img src="hedås-icon.png" alt="bild2" class="logor">
             </div>
         </div>
-        <div class="container-jobb">
+        <div id="container-jobb">
             <div class="jobb-info">
                 <h3>Teleperformance Kundservice 2021 September - 2022 Maj </h3>
                 <p>Jag jobbade inom service och tog samtal via telefon samt hjälpte kunder med allt från reklamation, leveransfrågor och svarade på allmänna frågor om kunden hade några. 
@@ -91,7 +101,7 @@
                 <img src="teleperformance-icon.jpg" alt="bild3" class="logor">
             </div>
         </div>
-        <div class="container-jobb">
+        <div id="container-jobb">
             <div class="jobb-info">
                 <h3>Medieinstitutet Pågående - 2024 Maj</h3>
                 <p>
@@ -103,7 +113,7 @@
             </div>
         </div>
         
-    <div class="Bakgrund-Skills">
+    <div id="Bakgrund-Skills">
         <h1 class="Skills-title">Skills</h1>
             <div class="Skills">
                 <div class="Skills-button" onclick="SkillsTag1()">
@@ -116,7 +126,7 @@
             </div>
 
             <div class="Skills-button" onclick="SkillsTag3()">
-                <h1>Tool skillss</h1>
+                <h1>Tool skills</h1>
                 <i class="fa-solid fa-chevron-down"></i>
              
             </div>
@@ -177,27 +187,41 @@
         </div> 
 </div>
     </div>
+    <h1 id="Portfolio">Portfolio</h1>
     <div class="Portfolio">
         <div class="projekt">
             <h1>RPG-spel</h1>
-            <p></p>
-        <a href="https://lauax.github.io/Laboration-1/" class="länkar"> Se här</a>
-        </div>
-        <div class="projekt">
-            <h1>Apples-hemsida</h1>
-            <p></p>
+            <h3>Javascript, HTML & CSS</h3>
+            <p class="info">Interactivt spel i Javascript ska <br>gå att göra olika val som användare</p>
             <a href="https://lauax.github.io/Laboration-1/" class="länkar"> Se här</a>
         </div>
         <div class="projekt">
+            <h1>Apples-hemsida</h1>
+            <h3>HTML & CSS</h3>
+            <p class="info">Kopia av Apples hemsida reponsivtet samt <br>design ska vara identisk gjort i HTML & CSS</p>
+            <a href="https://lauax.github.io/Apples-hemsida/" class="länkar"> Se här</a>
+        </div>
+        <div class="projekt">
             <h1>Ölstugan-hemsida</h1>
-            <p></p>
+            <h3 class="Spårk">HTML & CSS</h3>
+            <p class="info">Moderniserad version av Ölstugans hemsida reponsivtet <br>och utseende för hemsida är förbättrat gjort i HTML & CSS</p>
             <a href="https://lauax.github.io/Laboration-1/" class="länkar"> Se här</a>
         </div>
         <div class="projekt">
             <h1>Black-jack</h1>
-            <p></p>
-            <a href="https://lauax.github.io/Black-jack/">Se här</a>
+            <h3>Javascript, HTML & CSS</h3>
+            <p class="info">En black jack spel som jag har börjat på<br> för att öva på Javascript(inte färdigställt ännu)</p>
+            <a href="https://lauax.github.io/Black-jack/" class="länkar">Se här</a>
         </div>
     </div>
+
+    <footer id="footer">
+            <h3>Lucas Alfredsson © 2022</h3>
+        <div class="contact">
+           <a href="mailto:lucas12alfredsson@gmail.com" id="icons"><i  class="fa-solid fa-envelope"></i></a>
+           <a href="https://www.linkedin.com/in/lucas-alfredsson/" id="icons"><i  class="fa-brands fa-linkedin"></i></a>
+           <a href="https://github.com/lauax" id="icons"><i  class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
