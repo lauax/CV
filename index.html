@@ -8,20 +8,23 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/5e34bdfab1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="media.css">
 </head>
-<body>
+<body onresize="resize()">
     <header>
+        <i class="fa-solid fa-bars" id="dropdown" onClick="dropdown()" style="font-size: 1.5rem;"></i>
+        <div id="knappar">
         <a class="header-knappar" href="#gif-image">
             <ul>
                 Om mig
             </ul>
         </a>
-        <a class="header-knappar" href="#Erfarenhet">
+        <a class="header-knappar" href="#efarenhet-scroll">
             <ul>
                 Erfarenhet
             </ul>
         </a>
-        <a class="header-knappar" href="#Bakgrund-Skills">
+        <a class="header-knappar" href="#scroll-skills">
             <ul>
                 Kompetens
             </ul>
@@ -37,14 +40,16 @@
             </ul>
         </a>
         <ul>
-            <span class="switch" onclick="LightTheme()">
+            <span class="switch header-knappar" onclick="LightTheme()">
                 Ljust tema
             </span>
             <span class="switch-hr"></span>
-            <span class=" switch" onclick="DarkTheme()">
+            <span class="switch header-knappar" onclick="DarkTheme()">
                 Mörkt tema
             </span>
         </ul>
+    </div>
+
     </header>
     <div id="gif-image">
         <img src="BildPåMig.jpg" alt="circle" id="circle-image">
@@ -62,8 +67,10 @@
             De ämnen som lyftes under utbildningen matchar de färdigheter som efterfrågas för denna tjänst. Jag ser fram emot att mer ingående få beskriva min motivation samt relevans för tjänsten som Front end developer under ett personligt samtal. 
             <br><br>Du kan nå mig via telefon på 0766377670 eller via e-post på lucas12alfredsson@gmail.com. 
         </p>
+        <div id="efarenhet-scroll"></div>
     </div>
-
+    
+    
     <h1 id="Erfarenhet">Arbetserfarenhet och Utbildning</h1>
         <div id="container-jobb">
             <div class="jobb-info">
@@ -97,6 +104,7 @@
                  Det kräver även en stor portion tålamod.
                 </p>
             </div>
+            <div id="scroll-skills"></div>
             <div class="logor">
                 <img src="teleperformance-icon.jpg" alt="bild3" class="logor">
             </div>
@@ -112,27 +120,27 @@
                 <img src="medieinstitutet.jpg" alt="bild4" class="logor">
             </div>
         </div>
-        
+    
     <div id="Bakgrund-Skills">
         <h1 class="Skills-title">Skills</h1>
             <div class="Skills">
                 <div class="Skills-button" onclick="SkillsTag1()">
-                    <h1>Design skills</h1>
+                    <h2>Design skills</h2>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
             <div class="Skills-button" onclick="SkillsTag2()">
-                <h1>Development skills</h1>
+                <h2>Programming</h2>
                 <i class="fa-solid fa-chevron-down"></i>
             </div>
 
             <div class="Skills-button" onclick="SkillsTag3()">
-                <h1>Tool skills</h1>
+                <h2>Tool skills</h2>
                 <i class="fa-solid fa-chevron-down"></i>
-             
             </div>
         </div>
         <div class="p-tags">
             <div id="skills-p-tag1">
+                <h1 id="skills">Design skills</h1>
                 <div class="p-tag1">
                     <p>
                         UX
@@ -147,11 +155,12 @@
                         Web design
                     </p>
                 </div>
-                <div class="toggle"></div>
-        </div>
+                
+            </div>
         
-
+        
         <div id="skills-p-tag2">
+            <h1 id="skills">Programming</h1>
             <div class="p-tag2">
                     <p>
                         Javascript  
@@ -166,9 +175,10 @@
                         .GIT    
                     </p>
                 </div>
-                <div class="toggle"></div>
+                
             </div>
         <div id="skills-p-tag3">
+            <h1 id="skills">Tool skills</h1>
             <div class="p-tag3">
                     <p>
                        Github 
@@ -183,31 +193,36 @@
                         Microsoft 365
                     </p>
             </div>
-            <div class="toggle"></div>
-        </div> 
+            
+        </div>
+    </div> 
 </div>
     </div>
     <h1 id="Portfolio">Portfolio</h1>
     <div class="Portfolio">
         <div class="projekt">
+            <i class="fa-brands fa-github" id="Portfolio-icons"></i>
             <h1>RPG-spel</h1>
             <h3>Javascript, HTML & CSS</h3>
             <p class="info">Interactivt spel i Javascript ska <br>gå att göra olika val som användare</p>
             <a href="https://lauax.github.io/Laboration-1/" class="länkar"> Se här</a>
         </div>
         <div class="projekt">
+            <i class="fa-brands fa-github" id="Portfolio-icons"></i>
             <h1>Apples-hemsida</h1>
             <h3>HTML & CSS</h3>
             <p class="info">Kopia av Apples hemsida reponsivtet samt <br>design ska vara identisk gjort i HTML & CSS</p>
             <a href="https://lauax.github.io/Apples-hemsida/" class="länkar"> Se här</a>
         </div>
         <div class="projekt">
+            <i class="fa-brands fa-github" id="Portfolio-icons"></i>
             <h1>Ölstugan-hemsida</h1>
             <h3 class="Spårk">HTML & CSS</h3>
             <p class="info">Moderniserad version av Ölstugans hemsida reponsivtet <br>och utseende för hemsida är förbättrat gjort i HTML & CSS</p>
             <a href="https://lauax.github.io/Laboration-1/" class="länkar"> Se här</a>
         </div>
         <div class="projekt">
+            <i class="fa-brands fa-github" id="Portfolio-icons"></i>
             <h1>Black-jack</h1>
             <h3>Javascript, HTML & CSS</h3>
             <p class="info">En black jack spel som jag har börjat på<br> för att öva på Javascript(inte färdigställt ännu)</p>
@@ -222,6 +237,7 @@
            <a href="https://www.linkedin.com/in/lucas-alfredsson/" id="icons"><i  class="fa-brands fa-linkedin"></i></a>
            <a href="https://github.com/lauax" id="icons"><i  class="fa-brands fa-github"></i></a>
         </div>
+
     </footer>
 </body>
 </html>

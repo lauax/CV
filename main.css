@@ -12,7 +12,7 @@
     padding-bottom: 5vh;
     background-size: cover;
 }
-header{
+header {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
@@ -27,6 +27,9 @@ header{
     text-decoration: none;
     color: inherit;
 }
+.header-knappar:hover{
+    color: red;
+}
 
 .switch-hr{
     border: solid 1px;
@@ -35,6 +38,10 @@ header{
 
 .switch{
     margin: 1em;
+}
+
+.switch:hover{
+    color: red;
 }
 
 #circle-image{
@@ -60,40 +67,42 @@ header{
     letter-spacing: 0.1em;
 }
 .jobb-info{
-    width: 40%;
+    width: 30%;
     background-color: white;
 }
 
 #container-jobb{
-    flex-direction: row;
     display: flex;
-    margin-left: 15rem;
-    height: 13vh;
     margin-bottom: 1rem;
     align-items: center;
     background-color: white;
     margin-bottom: 2rem;
+    justify-content: space-between;
+    margin-left: 5em;
+    width: 100%;
 }
 .logor{
-    float: right;
-    width: 30%;
-    margin-left: 10rem
+    width: 10rem;
+    margin-right: 15em;
+    
 }
 .Skills-button{
     height: 6rem;
     width: 15%;
     background-color: grey;
-    border-radius: 2em;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .Skills{
     display: flex;
     justify-content: space-evenly;
     background-color: black;
     color: white;
+    width: 100%;
 }
 .Skills-button:hover {
     background-color: red;
@@ -106,50 +115,43 @@ header{
     padding-bottom: 4rem;
     padding-top: 4rem;
     font-size: 5rem;
+    width: 100%;
 }
+
 #Bakgrund-Skills{
     background-color: black;
     color: white;
-    height: 30rem;
+    width: 100%;
+    
 }
 #skills-p-tag1, #skills-p-tag2, #skills-p-tag3{
-    height: 6rem;
     width: 15%;
     background-color: grey;
     color: white;
-    display: inline;
+    display: inline-block;
     margin-top: -1.85em;
     padding-top: 1em;
     visibility: hidden;
+    margin-left: 1em;
+    margin-right:1em;
+    margin-bottom: 5em;
 }
 .p-tags{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
-.p-tag1{
-    margin-left: 2.4em;
+.p-tag1, .p-tag2, .p-tag3{
     font-size: larger;
+   
 }
-.p-tag2{
-    margin-left: 1em;
-    font-size: larger;
-}
-.p-tag3{
-    margin-left: 3em;
-    font-size: larger;
-}
+
 #Erfarenhet{
     font-size: 4rem;
     text-align: center;
     margin-bottom: 4rem;
 }
-.toggle{
-    height: 6rem;
-    background-color: grey;
-    border-radius: 2em;
-    color: white;
-    margin-top: -3.9em;
-}
+
 .Portfolio{
     margin-top: 3rem;
     justify-content: space-evenly;
@@ -170,7 +172,9 @@ header{
 .info{
     line-height: 1;
 }
-
+#Portfolio-icons{
+    font-size: 5rem;
+}
 .länkar:hover{
     color: red;
 }
@@ -199,3 +203,7 @@ header{
     color: inherit;
     font-size: x-large;
 }
+#icons:hover{
+    color:red;
+}
+

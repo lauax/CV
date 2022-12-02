@@ -12,7 +12,6 @@ function DarkTheme(){
 }
 function LightTheme(){
     document.getElementById("gif-image").style.backgroundImage = "url('gif-bild.png')";
-
 }
 
 function SkillsTag1(){
@@ -42,3 +41,51 @@ function SkillsTag3(){
   }
 }
 
+function dropdown(){
+  var toggleDropDown = document.getElementsByClassName("header-knappar");
+  console.log(toggleDropDown)
+  for (let index = 0; index < toggleDropDown.length; index++) {
+    const element = toggleDropDown[index];
+    if (element.style.display === "inline-block") {
+      element.style.display = "none";
+    } else {
+      element.style.display = "inline-block";
+    }
+  }  
+}
+
+function resize(){
+  console.log("RESIZE");
+  if(window.innerWidth >= 1300){
+    var toggleDropDown = document.getElementsByClassName("header-knappar");
+    for (let index = 0; index < toggleDropDown.length; index++) {
+    const element = toggleDropDown[index];
+    element.style.display = "inline-block";
+  }
+}
+  else{
+    var toggleDropDown = document.getElementsByClassName("header-knappar");
+    for (let index = 0; index < toggleDropDown.length; index++) {
+    const element = toggleDropDown[index];
+    element.style.display = "none";
+  }  
+}
+}
+
+function resize(){
+  console.log("RESIZE");
+  if(window.innerWidth >= 1300){
+    var toggle = document.getElementsByClassName("header-knappar");
+    for (let index = 0; index < toggle.length; index++) {
+    const element = toggle[index];
+    element.style.visibility = "visable";
+  }
+}
+  else{
+    var toggleDropDown = document.getElementsByClassName("header-knappar");
+    for (let index = 0; index < toggle.length; index++) {
+    const element = toggle[index];
+    element.style.visibility = "hidden";
+  }  
+}
+}
