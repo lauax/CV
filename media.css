@@ -120,3 +120,12 @@
         display: inline;
     }
 }
+
+@media(max-width:1300px){
+    #container-jobb, .logor, .jobb-info{
+        display: block; 
+        width: 50%;
+        margin:auto;
+        margin-top: 3em;
+     }
+}
